@@ -1,0 +1,9 @@
+{
+  "short_name": "Aleksandra Wagner",
+  "name": "Aleksandra Wagner Website",
+
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
