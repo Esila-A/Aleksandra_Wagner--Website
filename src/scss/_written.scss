@@ -1,0 +1,11 @@
+.written {
+  padding: 130px 130px;
+
+  &_header {
+    @include header;
+  }
+
+  &_list {
+    @include list;
+  }
+}

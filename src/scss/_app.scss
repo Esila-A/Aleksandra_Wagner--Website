@@ -1,0 +1,6 @@
+@use "sass:map";
+
+.App {
+  background-color: map.get($colors, background-color);
+};
+

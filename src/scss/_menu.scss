@@ -1,0 +1,42 @@
+@use "sass:map";
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 130px;
+
+  font-family: "Montserrat", sans-serif;
+
+  &_logo {
+    line-height: 1.5rem;
+
+    &--translate {
+      font-size: 1.25rem;
+      letter-spacing: 0.3rem;
+      color: map.get($colors, accent-color);
+      font-weight: 500;
+    }
+
+    &--name {
+      font-size: 1rem;
+      letter-spacing: 0.15rem;
+      font-weight: 600;
+    }
+  }
+
+  &_navigation {
+
+    &--link {
+      text-decoration: none;
+      margin-left: 10rem;
+      color: black;
+      font-weight: 700;
+
+      &:hover {
+        color: map.get($colors, accent-color);
+      }
+    }
+  }
+}

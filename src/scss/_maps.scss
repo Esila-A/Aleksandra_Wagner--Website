@@ -1,0 +1,14 @@
+@use "sass:map";
+
+$colors: (
+  background-color: #839ED3,
+  second-color: #426BB9,
+  accent-color: #FFCB6C,
+  font-color: #FFFFFF,
+);
+
+$fonts: (
+  main-font: "podkova",
+  second-font: "Nunito Sans" sans-serif,
+);
+

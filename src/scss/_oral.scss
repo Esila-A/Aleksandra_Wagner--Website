@@ -1,0 +1,11 @@
+.oral {
+  padding: 130px;
+
+  &_header {
+    @include header;
+  }
+
+  &_list {
+    @include list;
+  }
+}

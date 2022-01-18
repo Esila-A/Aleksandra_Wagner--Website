@@ -1,0 +1,12 @@
+.sworn {
+  padding: 0 130px;
+
+  &_header {
+    @include header;
+  }
+
+  &_list {
+    @include list;
+  }
+}
+
