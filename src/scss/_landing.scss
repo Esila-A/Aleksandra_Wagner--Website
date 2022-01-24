@@ -4,7 +4,7 @@
 .landing {
 
   color: map.get($colors, font-color);
-  padding: 20px 220px 20px 130px;
+  padding: 40px 220px 180px 130px;
 
   display: flex;
   justify-content: space-between;
@@ -12,26 +12,24 @@
 
   &_text {
     &--header {
-
-      font-family: "Kadwa";
+      font-family: 'Libre Baskerville', serif;
       font-size: 2.8rem;
       font-weight: bolder;
       letter-spacing: 0.3rem;
-      line-height: 3rem;
+      line-height: 3.2rem;
     }
 
     &--paragraph {
-      font-family: "Montserrat", sans-serif;
-      font-size: 1.4rem;
-      font-weight: 1200;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.8rem;
       letter-spacing: 0.13rem;
-      line-height: 2rem;
+      line-height: 2.2rem;
     }
 
     .btn {
-
       @include button();
       margin-left: 7rem;
+      margin-top: 1rem;
     }
   }
 

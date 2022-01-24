@@ -1,26 +1,30 @@
 @use "sass:map";
 
 .menu {
+  padding: 15px 130px 10px 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 30px 130px;
-
-  font-family: "Montserrat", sans-serif;
+  // position: sticky;
+  // top: 0;
+  // background-color: #6889c7f1;
+  background-color: map.get($colors, background-color);
+  font-family: 'Source Sans Pro', sans-serif;
+  // box-shadow: 0 0 10px map.get($colors, second-color);
+  border-bottom: 1px solid map.get($colors, second-color);
 
   &_logo {
     line-height: 1.5rem;
 
     &--translate {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       letter-spacing: 0.3rem;
       color: map.get($colors, accent-color);
       font-weight: 500;
     }
 
     &--name {
-      font-size: 1rem;
+      font-size: 1.17rem;
       letter-spacing: 0.15rem;
       font-weight: 600;
     }
@@ -31,8 +35,9 @@
     &--link {
       text-decoration: none;
       margin-left: 10rem;
-      color: black;
-      font-weight: 700;
+      color: map.get($colors, font-color);
+      font-weight: 600;
+      font-size: 1.2rem;
 
       &:hover {
         color: map.get($colors, accent-color);

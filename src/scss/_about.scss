@@ -1,0 +1,29 @@
+@use "sass:map";
+
+.about {
+
+  padding: 0 130px 160px 130px;
+
+  &_header {
+    @include header;
+  }
+
+  &_content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .profile {
+      box-sizing: border-box;
+      height: 36rem;
+      border: 2px double map.get($colors, second-color);
+      // box-shadow: 0 0 8px map.get($colors, second-color);
+    }
+
+    .text {
+      @include text;
+      margin-top: 0;
+    }
+  }
+}

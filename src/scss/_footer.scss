@@ -1,0 +1,29 @@
+@use "sass:map";
+
+.footer {
+
+  padding: 2rem 180px 2rem 180px;
+  @include text;
+  font-size: 1.1rem;
+  border-top: 2px solid map.get($colors, second-color);
+  background-color: #6889c7;
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+
+    &--data {
+      h4 {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+

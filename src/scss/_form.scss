@@ -1,0 +1,66 @@
+@use "sass:map";
+
+.form {
+
+  margin: 0 250px 180px 250px;
+  padding: 40px;
+  border: 5px solid map.get($colors, accent-color);
+
+  &_header {
+    @include header;
+    margin-bottom: 2rem;
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .requests {
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        @include text;
+          padding-bottom: 0.2rem;
+          margin-top: 1.5rem;
+      }
+
+      .input-fields {
+        box-sizing: border-box;
+        width: 55vw;
+        background-color: map.get($colors, second-color);
+        border: none;
+        border-radius: 5px;
+        padding: 1rem;
+        color: map.get($colors, font-color);
+
+        &::placeholder {
+          color: rgb(185, 185, 185);
+          font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        &--one {
+          height: 2.5rem;
+        }
+
+        &--two {
+          height: 15rem;
+          resize: none;
+        }
+
+        &:focus {
+          border: 2px solid map.get($colors, accent-color);
+        }
+      }
+    }
+  }
+
+  .submit {
+    @include button;
+    margin-top: 2rem;
+    align-self: center;
+  }
+}
+
