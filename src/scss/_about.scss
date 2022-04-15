@@ -1,29 +1,59 @@
 @use "sass:map";
+@import "mixins";
 
 .about {
-
-  padding: 0 130px 160px 130px;
+  padding: 85px 130px 100px 130px;
 
   &_header {
     @include header;
   }
 
   &_content {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .profile {
       box-sizing: border-box;
-      height: 36rem;
+      height: 70vh;
       border: 2px double map.get($colors, second-color);
-      // box-shadow: 0 0 8px map.get($colors, second-color);
     }
 
     .text {
       @include text;
-      margin-top: 0;
+      margin: 0 0 0 3vw;
+      width: 45vw;
+      text-align: justify;
+    }
+  }
+}
+
+@media (max-width: 796px) {
+  .about {
+    padding: 10vh 0 13vh 0;
+
+    &_header {
+      @include mobileHeader;
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .profile {
+        box-sizing: border-box;
+        height: 20rem;
+        border: 2px double map.get($colors, second-color);
+      }
+
+      .text {
+        @include mobileText;
+        margin: 3vh 0 0 0;
+        width: 84vw;
+        letter-spacing: 0;
+        font-size: .9rem;
+      }
     }
   }
 }

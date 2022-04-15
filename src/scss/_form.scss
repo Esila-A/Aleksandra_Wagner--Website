@@ -1,8 +1,11 @@
 @use "sass:map";
 
+.attempt {
+  padding: 80px 0px;
+}
 .form {
-
-  margin: 0 250px 180px 250px;
+  margin: 0 auto;
+  width: 65vw;
   padding: 40px;
   border: 5px solid map.get($colors, accent-color);
 
@@ -23,8 +26,8 @@
 
       .text {
         @include text;
-          padding-bottom: 0.2rem;
-          margin-top: 1.5rem;
+        padding-bottom: 0.2rem;
+        margin-top: 1.5rem;
       }
 
       .input-fields {
@@ -38,7 +41,7 @@
 
         &::placeholder {
           color: rgb(185, 185, 185);
-          font-family: 'Source Sans Pro', sans-serif;
+          font-family: "Source Sans Pro", sans-serif;
         }
 
         &--one {
@@ -47,12 +50,17 @@
 
         &--two {
           height: 15rem;
-          resize: none;
         }
 
         &:focus {
           border: 2px solid map.get($colors, accent-color);
         }
+
+        resize: none;
+      }
+
+      input:-internal-autofill-selected {
+        background-color: map.get($colors, second-color);
       }
     }
   }
@@ -62,5 +70,93 @@
     margin-top: 2rem;
     align-self: center;
   }
+
+  .positive {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.13rem;
+    margin-top: 2rem;
+    line-height: 31px;
+    border: 3px solid #68e452;
+    border-radius: 29px;
+    color: #68e452;
+    box-sizing: border-box;
+    padding: 5px 45px 0 45px;
+    height: 47px;
+    text-align: center;
+  }
+
+  .negative {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.13rem;
+    margin-top: 2rem;
+    line-height: 31px;
+    color: #e45252;
+    border: 3px solid #e45252;
+    border-radius: 29px;
+    color: #e45252;
+    box-sizing: border-box;
+    padding: 5px 45px 0 45px;
+    height: 47px;
+    text-align: center;
+  }
 }
 
+@media (max-width: 792px) {
+  .attempt {
+    padding: 10vh 0 10vh 0;
+  }
+
+  .form {
+    padding: 10px 40px 30px 40px;
+
+    &_header {
+      @include mobileHeader;
+      margin: 1rem;
+    }
+
+    &_content {
+      .requests {
+        .text {
+          font-size: 1rem;
+        }
+
+        .input-fields {
+          width: 70vw;
+
+          &::placeholder {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .submit {
+      @include mobileButton;
+      margin-top: 1.5rem;
+    }
+
+    .positive {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      text-align: center;
+      box-sizing: border-box;
+      height: 40px;
+      padding: 2px 20px;
+    }
+
+    .negative {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      text-align: center;
+      box-sizing: border-box;
+      height: 40px;
+      padding: 2px 20px;
+    }
+  }
+}

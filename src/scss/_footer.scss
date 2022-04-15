@@ -1,7 +1,6 @@
 @use "sass:map";
 
 .footer {
-
   padding: 2rem 180px 2rem 180px;
   @include text;
   font-size: 1.1rem;
@@ -27,3 +26,29 @@
   }
 }
 
+@media (max-width: 792px) {
+  .footer {
+    padding: 0;
+    @include mobileText;
+    font-size: .7rem;
+    text-align: center;
+
+
+    &_content {
+      flex-direction: column;
+
+      &--data {
+        h4 {
+          font-size: .9rem;
+          padding-top: 2rem;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 3rem;
+      padding-bottom: 1.5rem;
+      font-size: .6rem;
+    }
+  }
+}

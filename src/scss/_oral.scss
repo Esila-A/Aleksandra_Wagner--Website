@@ -1,11 +1,25 @@
 .oral {
-  padding: 0 300px 160px 300px;
+  padding: 0 300px 75px 300px;
 
   &_header {
     @include header;
   }
 
   &_list {
-    @include list;
+    @include circle;
+  }
+}
+
+@media (max-width: 792px) {
+  .oral {
+    padding: 0 0 3vh 0;
+
+    &_header {
+      @include mobileHeader;
+    }
+
+    &_list {
+      @include mobileCircle;
+    }
   }
 }

@@ -1,31 +1,45 @@
 const Examples = () => {
-    return (
-      <div className="examples">
-        <h2 className="examples_header">PRZYKŁADY TŁUMACZEŃ</h2>
-        <ul className="examples_list">
-          <li className="text">Robocze tłumaczenia scenariuszy filmowych – w jednym<br/>
-przypadku chodziło o film animowany, a tłumaczenie<br/>
-stanowiło wskazówkę dla osób zajmujących się animacją,<br/>
-w drugim chodziło o przetłumaczenie streszczeń odcinków<br/>
-planowanego serialu.</li>
-          <li className="text">Tłumaczenia kabinowe na Kongresie Międzynarodowego<br/>
-Stowarzyszenia Mierniczych Górniczych (International<br/>
-Society for Mine Surveying - ISM) w Krakowie w 2000 r.<br/>
-oraz na spotkaniach Prezydium ISM m.in. w Glamorgan<br/>
-(Walia) w 2004 r.</li>
-          <li className="text">Tłumaczenia na policji (zeznania pokrzywdzonych,<br/>
-wyjaśnienia podejrzanych).</li>
-          <li className="text">Tłumaczenia na międzynarodowych konferencjach z serii<br/>
-Euro-Eco (AGH w Krakowie, 1993 – 2013).</li>
-          <li className="text">Tłumaczenia artykułów naukowych z języka polskiego na<br/>
-angielski z następujących dziedzin: geodezja, fotogrametria, inżynieria środowiska, historia sportu,<br/>
-nauki polityczne.</li>
-          <li className="text">Tłumaczenia umów handlowych oraz tłumaczenia ustne,<br/>
-dotyczące ww. umów.</li>
-        </ul>
-      </div>
-    )
-}
+  return (
+    <div className="examples">
+      <h2 className="examples_header">PRZYKŁADY TŁUMACZEŃ</h2>
+      <ul className="examples_list">
+        <li className="text">
+          Robocze tłumaczenia scenariuszy filmowych – w jednym przypadku
+          chodziło o film animowany, a tłumaczenie stanowiło wskazówkę dla osób
+          zajmujących się animacją, w drugim chodziło o przetłumaczenie
+          streszczeń odcinków planowanego serialu.
+        </li>
+        <span className="separator" />
+        <li className="text">
+          Tłumaczenia kabinowe na Kongresie Międzynarodowego Stowarzyszenia
+          Mierniczych Górniczych (International Society for Mine Surveying -
+          ISM) w Krakowie w 2000 r. oraz na spotkaniach Prezydium ISM m.in. w
+          Glamorgan (Walia) w 2004 r.
+        </li>
+        <span className="separator" />
+        <li className="text">
+          Tłumaczenia na policji (zeznania pokrzywdzonych, wyjaśnienia
+          podejrzanych).
+        </li>
+        <span className="separator" />
+        <li className="text">
+          Tłumaczenia na międzynarodowych konferencjach z serii Euro-Eco (AGH w
+          Krakowie, 1993 – 2013).
+        </li>
+        <span className="separator" />
+        <li className="text text--none">
+          Tłumaczenia artykułów naukowych z języka polskiego na angielski z
+          następujących dziedzin: fotogrametria, geodezja, inżynieria
+          środowiska, historia sportu, nauki polityczne.
+        </li>
+        <span className="separator" />
+        <li className="text text--none text--no">
+          Tłumaczenia umów handlowych oraz tłumaczenia ustne, dotyczące ww.
+          umów.
+        </li>
+      </ul>
+    </div>
+  );
+};
 
 export default Examples;
-

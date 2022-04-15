@@ -1,0 +1,120 @@
+@use "sass:map";
+
+.header {
+  padding: 15px 130px 10px 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #6889c7f1;
+
+  font-family: "Source Sans Pro", sans-serif;
+  box-shadow: 0 0 10px map.get($colors, second-color);
+  border-bottom: 1px solid map.get($colors, second-color);
+
+  &_logo {
+    line-height: 1.5rem;
+
+    &--translate {
+      font-size: 1.5rem;
+      letter-spacing: 0.3rem;
+      color: map.get($colors, accent-color);
+      font-weight: 500;
+    }
+
+    &--name {
+      font-size: 1.17rem;
+      letter-spacing: 0.15rem;
+      font-weight: 600;
+    }
+  }
+
+  .menu {
+    &_navigation {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10rem;
+
+      &--list {
+        list-style: none;
+      }
+
+      &--link {
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: map.get($colors, font-color);
+        font-weight: 600;
+        font-size: 1.2rem;
+
+        &:hover {
+          color: map.get($colors, accent-color);
+        }
+      }
+    }
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  @media (max-width: 792px) {
+    .header {
+
+      &_logo {
+        line-height: 1.2rem;
+
+        &--translate {
+          font-size: 1.2rem;
+          letter-spacing: 0.2rem;
+          color: map.get($colors, accent-color);
+          font-weight: 500;
+        }
+
+        &--name {
+          font-size: 1rem;
+          letter-spacing: 0.06rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .computerMenu {
+      display: none;
+    }
+
+    .mobileMenu {
+      display: flex;
+
+      .icon {
+        color: map.get($colors, font-color);
+        width: 100%;
+        cursor: pointer;
+        z-index: 1;
+        font-size: 2.2rem;
+      }
+
+      .menu_navigation {
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 9vh;
+        width: 100%;
+        background-color: #6889c7f1;
+        padding: 4rem;
+        gap: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 792px) {
+  .header {
+    padding: 15px 25px 10px 25px;
+  }
+}

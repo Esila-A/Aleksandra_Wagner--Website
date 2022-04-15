@@ -1,12 +1,25 @@
 .sworn {
-  padding: 0 130px 160px 130px;
+  padding: 160px 130px;
 
   &_header {
     @include header;
   }
 
   &_list {
-    @include list;
+    @include circle;
   }
 }
 
+@media (max-width: 792px) {
+  .sworn {
+    padding: 13vh 0 13vh 0;
+
+    &_header {
+      @include mobileHeader;
+    }
+
+    &_list {
+      @include mobileCircle;
+    }
+  }
+}
