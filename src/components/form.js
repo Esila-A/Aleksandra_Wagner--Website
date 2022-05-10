@@ -68,7 +68,7 @@ const Form = () => {
   };
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey="6LfcLFcfAAAAAHtbd9ifJ2hYF-WValCwQZX3sIf5">
+    <GoogleReCaptchaProvider reCaptchaKey="6Le76NofAAAAAFuYytDsOf5XX74HKL1as2BAz35L">
       <div className="attempt" id="form">
         <div className="form">
           <h2 className="form_header">FORMULARZ KONTAKTOWY</h2>
@@ -111,10 +111,8 @@ const Form = () => {
             {!notice ? <SubmitButton /> : ""}
             {notice === "success" ? <p className="positive">WYSŁANO!</p> : ""}
             {notice === "error" ? (
-              <p>
-                COŚ POSZŁO NIE TAK...
-                <br />
-                SPRÓBUJ JESZCZE RAZ!
+              <p className="negative">
+                COŚ POSZŁO NIE TAK... SPRÓBUJ JESZCZE RAZ!
               </p>
             ) : (
               ""
