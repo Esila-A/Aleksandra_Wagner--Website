@@ -68,7 +68,7 @@ const Form = () => {
   };
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey="6Le76NofAAAAAFuYytDsOf5XX74HKL1as2BAz35L">
+    <GoogleReCaptchaProvider reCaptchaKey="6LfxQt0fAAAAAAWbGJoDNtHG8sXBUYvvsOS6pjt3">
       <div className="attempt" id="form">
         <div className="form">
           <h2 className="form_header">FORMULARZ KONTAKTOWY</h2>
