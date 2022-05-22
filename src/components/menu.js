@@ -1,20 +1,26 @@
 const Menu = (props) => {
+
   return (
     <div className="menu">
       <ul className="menu_navigation">
         <li
-          className="menu_navigation--list"
+          className="menu_navigation--list "
           onClick={() => props.isMobilePhone && props.closeMenu()}
         >
-          <a href="#landing" className="menu_navigation--link">
+          <a
+            href="#landing"
+            className="menu_navigation--link"
+          >
             Główna
           </a>
         </li>
         <li
           className="menu_navigation--list"
-          onClick={() => props.isMobilePhone && props.closeMenu()}
         >
-          <a href="#written" className="menu_navigation--link">
+          <a
+            href="#written"
+            className="menu_navigation--link"
+          >
             Usługi
           </a>
         </li>

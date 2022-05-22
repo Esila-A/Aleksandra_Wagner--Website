@@ -17,7 +17,7 @@ const SubmitButton = () => {
 
     const token = await executeRecaptcha("yourAction");
     // Do whatever you want with the token
-  }, []);
+  }, [executeRecaptcha]);
 
   // You can use useEffect to trigger the verification as soon as the component being loaded
   useEffect(() => {
@@ -111,9 +111,9 @@ const Form = () => {
             {!notice ? <SubmitButton /> : ""}
             {notice === "success" ? <p className="positive">WYSŁANO!</p> : ""}
             {notice === "error" ? (
-              <p className="negative">
+              <button className="negative" onClick={handleSubmit}>
                 COŚ POSZŁO NIE TAK... SPRÓBUJ JESZCZE RAZ!
-              </p>
+              </button>
             ) : (
               ""
             )}

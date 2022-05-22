@@ -33,15 +33,23 @@
     }
   }
 
+  
+
   .menu {
     &_navigation {
       display: flex;
       justify-content: space-evenly;
       gap: 10rem;
 
+      
       &--list {
         list-style: none;
       }
+
+      .active {
+        color: map.get($colors, accent-color);
+      }
+      
 
       &--link {
         letter-spacing: 1px;
