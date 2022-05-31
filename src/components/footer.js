@@ -1,4 +1,7 @@
 const Footer = () => {
+    let date = new Date();
+    let year = date.getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer_content">
@@ -25,7 +28,9 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <p className="copyright">Copyright &copy; 2022</p>
+      <p className="copyright">
+        Copyright &copy; {year}
+      </p>
     </footer>
   );
 };

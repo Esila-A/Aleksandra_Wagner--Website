@@ -1,5 +1,4 @@
 @use "sass:map";
-@import "mixins";
 
 .about {
   padding: 85px 130px 100px 130px;
@@ -37,14 +36,10 @@
     }
 
     &_content {
-      display: flex;
       flex-direction: column;
-      align-items: center;
 
       .profile {
-        box-sizing: border-box;
         height: 20rem;
-        border: 2px double map.get($colors, second-color);
       }
 
       .text {
@@ -53,6 +48,33 @@
         width: 84vw;
         letter-spacing: 0;
         font-size: .9rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 792px) and (max-width: 1100px) {
+  .about {
+    padding: 85px 90px 100px 90px;
+
+    &_header {
+      font-size: 1.7rem;
+    }
+
+    &_content {
+      display: inline;
+
+      .profile {
+        height: 24rem;
+        margin: .3rem 2rem 1rem 0;
+        float: left;
+      }
+
+      .text {
+        font-size: 1rem;
+        width: auto;
+        line-height: 1.4rem;
+        margin: 0;
       }
     }
   }

@@ -1,7 +1,7 @@
 @use "sass:map";
 
 .footer {
-  padding: 2rem 180px 2rem 180px;
+  padding: 2rem 180px;
   @include text;
   font-size: 1.1rem;
   border-top: 2px solid map.get($colors, second-color);
@@ -49,6 +49,25 @@
       margin-top: 3rem;
       padding-bottom: 1.5rem;
       font-size: .6rem;
+    }
+  }
+}
+
+@media (min-width: 792px) and (max-width: 1100px) {
+  .footer {
+    padding: 2rem 80px 1rem 80px;
+    font-size: .9rem;
+
+    &_content {
+      &--data {
+        h4 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: .8rem;
     }
   }
 }

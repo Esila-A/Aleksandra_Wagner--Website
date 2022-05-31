@@ -33,15 +33,12 @@
     }
   }
 
-  
-
   .menu {
     &_navigation {
       display: flex;
       justify-content: space-evenly;
       gap: 10rem;
 
-      
       &--list {
         list-style: none;
       }
@@ -49,7 +46,6 @@
       .active {
         color: map.get($colors, accent-color);
       }
-      
 
       &--link {
         letter-spacing: 1px;
@@ -68,25 +64,23 @@
   .mobileMenu {
     display: none;
   }
+}
 
-  @media (max-width: 792px) {
-    .header {
+@media (max-width: 792px) {
+  .header {
+    padding: 15px 25px 10px 25px;
 
-      &_logo {
-        line-height: 1.2rem;
+    &_logo {
+      line-height: 1.2rem;
 
-        &--translate {
-          font-size: 1.2rem;
-          letter-spacing: 0.2rem;
-          color: map.get($colors, accent-color);
-          font-weight: 500;
-        }
+      &--translate {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+      }
 
-        &--name {
-          font-size: 1rem;
-          letter-spacing: 0.06rem;
-          font-weight: 600;
-        }
+      &--name {
+        font-size: 1rem;
+        letter-spacing: 0.06rem;
       }
     }
 
@@ -121,8 +115,28 @@
   }
 }
 
-@media (max-width: 792px) {
+@media (min-width: 792px) and (max-width: 1100px) {
   .header {
-    padding: 15px 25px 10px 25px;
+    padding: 15px 80px 10px 80px;
+
+    &_logo {
+      &--translate {
+        font-size: 1.35rem;
+      }
+
+      &--name {
+        font-size: 1.04rem;
+      }
+    }
+
+    .menu {
+      &_navigation {
+        gap: 5rem;
+
+        &--link {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
