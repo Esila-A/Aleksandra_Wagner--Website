@@ -1,7 +1,7 @@
 @use "sass:map";
 
 .header {
-  padding: 15px 130px 10px 130px;
+  padding: 15px 7.5vw 10px 7.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,7 +115,7 @@
   }
 }
 
-@media (min-width: 792px) and (max-width: 1100px) {
+@media (min-width: 793px) and (max-width: 1100px) {
   .header {
     padding: 15px 80px 10px 80px;
 
@@ -135,6 +135,20 @@
 
         &--link {
           font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1700px) {
+  .header {
+    .menu {
+      &_navigation {
+        gap: 5rem;
+
+        &--link {
+          font-size: 1.3vw;
         }
       }
     }

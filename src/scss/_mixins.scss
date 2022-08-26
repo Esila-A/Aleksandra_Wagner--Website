@@ -1,7 +1,6 @@
 @use "sass:map";
 
 // BUTTON //
-
 @mixin button {
   background-color: map.get($colors, accent-color);
   width: 212px;
@@ -35,13 +34,13 @@
   }
 }
 
-// HEADER //
 
+// HEADER //
 @mixin header {
   font-family: "Libre Baskerville", serif;
-  font-size: 2.4rem;
+  font-size: 2.2vw;
   font-weight: bolder;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.25vw;
   line-height: 3rem;
   color: map.get($colors, font-color);
   text-align: center;
@@ -72,8 +71,8 @@
   }
 }
 
-// CIRCLE //
 
+// CIRCLE //
 @mixin circle {
   display: flex;
   flex-wrap: wrap;
@@ -126,7 +125,6 @@
   .border {
     border: 2px solid map.get($colors, accent-color);
     border-radius: 50%;
-    // margin: 17.5px;
   }
 
   .circle {
@@ -171,8 +169,8 @@
   }
 
   .circle {
-    height: 18.5rem;
-    width: 18.5rem;
+    height: 16.5rem;
+    width: 16.5rem;
     line-height: 1.1rem;
     margin: 15px;
 
@@ -183,21 +181,64 @@
 
     .text {
       font-size: 0.7rem;
-      margin-top: 1.8rem;
+      margin-top: 1.2rem;
     }
   }
 }
 
-// TEXT //
+@mixin ipadCircle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
 
+  .border {
+    border: 2px solid map.get($colors, accent-color);
+    border-radius: 50%;
+    margin: 13px;
+  }
+
+  .circle {
+    background-color: map.get($colors, second-color);
+    height: 23vw;
+    width: 23vw;
+    border-radius: 50%;
+    margin: 17.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.11rem;
+    line-height: 1.4rem;
+
+    .title {
+      color: map.get($colors, font-color);
+      font-weight: bold;
+      font-size: 1.3vw;
+      padding-bottom: 2px;
+      border-bottom: 3px solid map.get($colors, accent-color);
+    }
+
+    .text {
+      font-size: 1vw;
+      font-weight: normal;
+      color: map.get($colors, font-color);
+      margin-top: 8%;
+    }
+  }
+}
+
+
+// TEXT //
 @mixin text {
-  font-size: 1.4rem;
+  font-size: 1.3vw;
   font-weight: normal;
   color: map.get($colors, font-color);
   margin-top: 2rem;
   font-family: "Source Sans Pro", sans-serif;
-  line-height: 1.5rem;
-  letter-spacing: 0.1rem;
+  line-height: 108%;
+  letter-spacing: 0.1vw;
 }
 
 @mixin mobileText {

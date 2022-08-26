@@ -1,5 +1,5 @@
 .written {
-  padding: 90px 130px 0 130px;
+  padding: 90px 7.5vw 0 7.5vw;
 
   &_header {
     @include header;
@@ -24,15 +24,24 @@
   }
 }
 
-@media (min-width: 792px) and (max-width: 1100px) {
+@media (min-width: 793px) and (max-width: 1100px) {
   .written {
-      &_header {
-        @include header;
-        font-size: 1.7rem
-      }
-  
-      &_list {
-        @include tabletCircle;
-      }
+    padding: 90px 9vw 0 9vw;
+    
+    &_header {
+      font-size: 1.7rem;
     }
+
+    &_list {
+      @include tabletCircle;
+    }
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1700px) {
+  .written {
+    &_list {
+      @include ipadCircle;
+    }
+  }
 }

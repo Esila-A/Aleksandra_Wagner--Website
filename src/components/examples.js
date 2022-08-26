@@ -9,31 +9,26 @@ const Examples = () => {
           zajmujących się animacją, w drugim chodziło o przetłumaczenie
           streszczeń odcinków planowanego serialu.
         </li>
-        {/* <span className="separator" /> */}
         <li className="text">
           Tłumaczenia kabinowe na Kongresie Międzynarodowego Stowarzyszenia
           Mierniczych Górniczych (International Society for Mine Surveying -
           ISM) w Krakowie w 2000 r. oraz na spotkaniach Prezydium ISM m.in. w
           Glamorgan (Walia) w 2004 r.
         </li>
-        {/* <span className="separator" /> */}
         <li className="text">
           Tłumaczenia na policji (zeznania pokrzywdzonych, wyjaśnienia
           podejrzanych).
         </li>
-        {/* <span className="separator" /> */}
         <li className="text">
           Tłumaczenia na międzynarodowych konferencjach z serii Euro-Eco (AGH w
           Krakowie, 1993 – 2013).
         </li>
-        {/* <span className="separator" /> */}
-        <li className="text text--none">
+        <li className="text">
           Tłumaczenia artykułów naukowych z języka polskiego na angielski z
           następujących dziedzin: fotogrametria, geodezja, inżynieria
           środowiska, historia sportu, nauki polityczne.
         </li>
-        {/* <span className="separator" /> */}
-        <li className="text text--none text--no">
+        <li className="text text--no">
           Tłumaczenia umów handlowych oraz tłumaczenia ustne, dotyczące ww.
           umów.
         </li>

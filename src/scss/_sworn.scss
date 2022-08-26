@@ -1,5 +1,5 @@
 .sworn {
-  padding: 160px 130px;
+  padding: 160px 7.5vw;
 
   &_header {
     @include header;
@@ -24,15 +24,26 @@
   }
 }
 
-@media (min-width: 792px) and (max-width: 1100px) {
+@media (min-width: 793px) and (max-width: 1100px) {
   .sworn {
-    &_header {
-      @include header;
+      padding: 160px 9vw;
+      
+      &_header {
       font-size: 1.7rem
     }
 
     &_list {
       @include tabletCircle;
+    }
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1700px) {
+  .sworn {
+    padding: 160px 8vw;
+
+    &_list {
+      @include ipadCircle;
     }
   }
 }

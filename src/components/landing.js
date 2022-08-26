@@ -19,12 +19,16 @@ const Landing = () => {
           <br />a także przysięgle dokumenty urzędowe
         </p>
         <br />
-        <p className="landing_text--paragraph paragraph-two">
-          Umów wycenę i termin realizacji
-        </p>
-        <a href="#form">
-          <button className="btn">UMÓW</button>
-        </a>
+        <div className="hmm">
+          <div className="cta">
+            <p className="landing_text--paragraph paragraph-two">
+              Umów wycenę i termin realizacji
+            </p>
+            <a href="#form">
+              <button className="btn">UMÓW</button>
+            </a>
+          </div>
+        </div>
       </div>
       <img src={photo} className="photo" alt="graphic" />
     </div>
