@@ -54,7 +54,7 @@ const Form = () => {
     e.preventDefault();
 
     send(
-      "service_0ru1bbl",
+      "service_ozxzrdl",
       "template_ys9ci8a",
       form,
       "user_y5LyArSJd8PVIrx90Mux4"
